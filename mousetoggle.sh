@@ -1,6 +1,7 @@
 #!/bin/bash
 
-HOME=/home/hardwarepc/test/mousetoggle/
+USER="user"
+HOME=/home/$USER/test/mousetoggle/
 DEVICE=12
 INITIAL_STATE=$(cat $HOME/.state)
 
