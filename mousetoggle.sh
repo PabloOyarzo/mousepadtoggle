@@ -1,17 +1,21 @@
 #!/bin/bash
 
 USER="user"
-HOME=/home/$USER/test/mousetoggle/
-DEVICE=12
+DEVICE='device'
+HOME=/home/$USER/.scripts/mousepadtoggle
+
+DEVICE_NUMBER=$(xinput --list | grep "${DEVICE}" | awk -F "\t" '{print $2}' | awk -F "=" '{print $2}')
 INITIAL_STATE=$(cat $HOME/.state)
 
 function toggle {
   if [ "$INITIAL_STATE" = "disable" ]
   then
-    xinput --disable $DEVICE
+    xinput --enable $DEVICE_NUMBER
     echo "enable" > $HOME/.state
   else
-    xinput --enable $DEVICE
+    xinput --disable $DEVICE_NUMBER
     echo "disable" > $HOME/.state
   fi
 }
+
+toggle
