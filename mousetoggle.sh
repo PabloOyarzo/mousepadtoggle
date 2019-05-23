@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Pablo Oyarzo
+# mousepadtoggle - mousetoggle.sh
+
 #!/bin/bash
 
 DEVICE='Touchpad'
