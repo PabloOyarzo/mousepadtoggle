@@ -11,10 +11,9 @@ cd $HOME/.scripts/mousepadtoggle/
 git clone https://github.com/PabloOyarzo/mousepadtoggle.git
 ```
 
-Then add the shortcut to your system
- I personally like `Alt + X`
-with the command
-  sh /home/`YourUserHere`/.scripts/mousepadtoggle/mousetoggle.sh
+Then add the shortcut to your system.
+I personally like `Alt + X` with the command
+```sh /home/`YourUserHere`/.scripts/mousepadtoggle/mousetoggle.sh```
 
 ## What's next?
-*Add automatic shortcut Add
+* Add automatic shortcut Add
